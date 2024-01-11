@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter' sans-serif;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex; 
+    top: 0%;
+    
+    
+}
+label{
+    font-size: 35px; 
+    font-weight: bold;
+    padding-left: 120px;
+    color: rgb(0, 0, 0);
+ }
+ nav{ 
+     width: 100%;
+     height: 200px;
+     flex:1;
+     padding-top: 20px;
+     padding-right: 100px;
+     align-items: center;
+     margin-bottom: 200px;
+ }
+ nav ul{
+     float: right;
+     margin-right:none;
+     
+ 
+ }
+ nav ul li{
+     display: inline-block;
+     position: relative;
+     margin-right: 60px;
+     
+ 
+     
+ }
+ nav ul li a{
+     color: hsl(233, 8%, 79%);
+     font-size: 20px;
+     display: block;
+     text-decoration: none;
+ 
+ }
+
+ .main{
+    /* background-color: aquamarine; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+     align-items: center;
+ }
+ .grid-container{
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+        "i i n"
+        "f f n"
+        "o o o"
+    ;
+ }
+
+.image{
+    margin-top: 10px;
+    border-radius: 5%;
+    /* width: 70%; */
+    grid-area: i;
+
+
+ }
+
+ .future{
+    display: flex;
+    grid-area: f;
+    /* height: 30vh; */
+ }
+.h1{
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+.fut{
+    color: hsl(236, 13%, 42%);
+    width: 50%;
+}
+.fut p{
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+.fut > button{
+    font-size: 15px;
+    color: white;
+    height: 40px;
+    width: 180px;
+    border: none;
+    margin-top: 20px;
+    background-color: hsl(5, 85%, 63%);
+    align-items: end;
+}
+
+ .new{
+    grid-area: n;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    width: 80%;
+ }
+
+ .new h3{
+    text-align: left;
+    font-size: 25px;
+    padding-bottom:20px ;
+    color:  hsl(35, 77%, 62%);
+    font-weight: bold;
+ }
+ .new p{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+ }
+ .new > h4{
+    font-weight: bold;
+    font-size: 25px;
+ }
+ .hydrogen{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+ }
+
+ .AI{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+ }
+ .VC{
+    padding-top: 30px;
+    padding-bottom: 10px;
+ }
+
+ .footer{
+    display: flex;
+    grid-area: o;
+    margin-top: 50px;
+ }
+ .one{
+    display: flex;
+ }
+ .five{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+ }
+ .five h4{
+    color: hsl(240, 100%, 5%);
+    font-size: 20px;
+    font-weight: bold;
+
+ }
+ .five h2{
+    color: hsl(233, 8%, 79%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+ }
+ .five p{
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-top: 20px;
+    align-items: end;
+ }
+ .two{
+    display: flex;
+ }
+ .three{
+    display: flex;
+    padding-left: 20px;
+ }
+ 
